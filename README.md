@@ -85,7 +85,7 @@ const pair = await getRate('USD', 'NIO', { apiKey: 'art_live_...' });
 {
   bank: 'bcn',
   name: 'Banco Central de Nicaragua',
-  rate_date: '2026-12-31',   // Banco Central de Nicaragua's own publication date
+  rate_date: '2026-09-02',   // Banco Central de Nicaragua's own publication date
   source: 'USD',
   target: 'NIO',
   rate: 36.6243,
@@ -113,7 +113,7 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bcn',
   name: 'Banco Central de Nicaragua',
-  rate_date: '2026-12-31',
+  rate_date: '2026-09-02',
   rates: [
     { "base": "USD", "quote": "NIO", "type": "reference", "value": 36.6243 },
     // … the rest of the published table (1 currency vs NIO)
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bcn-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'NIO', from: '2026-01-01', to: '2026-12-31' },
+  { source: 'USD', target: 'NIO', from: '2026-01-01', to: '2026-09-02' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'NIO',
   from: '2026-01-01',
-  to: '2026-12-31',
+  to: '2026-09-02',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-12-31', rate: 36.6243, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-02', rate: 36.6243, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
