@@ -47,7 +47,7 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by Banco Central de Nicaragua — 1 rate. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by Banco Central de Nicaragua — 1 rate. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -216,6 +216,7 @@ The Banco Central de Nicaragua publishes the official córdoba/dollar exchange r
 
 - Publisher's own page: [Tipo de cambio oficial](https://www.bcn.gob.ni/tipo-cambio-oficial) · [www.bcn.gob.ni](https://www.bcn.gob.ni)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Banco Central de Nicaragua rates page](https://allratestoday.com/central-bank-rates-api/bcn/)
+- In the API: usually by **19:10 UTC** (measured over the last 78 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
