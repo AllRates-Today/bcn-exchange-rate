@@ -32,7 +32,7 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-31 by Banco Central de Nicaragua — 1 rate. Updated 2026-10-31.</summary>
+<summary>Table as text: published 2026-11-01 by Banco Central de Nicaragua — 1 rate. Updated 2026-11-01.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
